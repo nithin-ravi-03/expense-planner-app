@@ -68,14 +68,14 @@ const SavingsGoals = () => {
         />
         <input
           type="number"
-          placeholder="Target Amount"
+          placeholder="Target Amount (₹)"
           value={newGoal.targetAmount}
           onChange={(e) => setNewGoal(prev => ({ ...prev, targetAmount: e.target.value }))}
           className="p-2 border rounded"
         />
         <input
           type="number"
-          placeholder="Current Amount (optional)"
+          placeholder="Current Amount ₹(optional)"
           value={newGoal.currentAmount}
           onChange={(e) => setNewGoal(prev => ({ ...prev, currentAmount: e.target.value }))}
           className="p-2 border rounded"
@@ -123,7 +123,7 @@ const SavingsGoals = () => {
               <div className="space-y-2">
                 <div className="flex justify-between text-sm">
                   <span>Progress: {progress.toFixed(1)}%</span>
-                  <span>${goal.currentAmount} / ${goal.targetAmount}</span>
+                  <span>₹{goal.currentAmount} / ₹{goal.targetAmount}</span>
                 </div>
                 <div className="relative pt-1">
                   <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-200">

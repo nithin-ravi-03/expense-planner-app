@@ -35,7 +35,7 @@ const ExpenseSummary = ({ expenses }) => {
           <ChartBarIcon className="w-12 h-12 text-blue-500" />
           <div className="ml-4">
             <h3 className="text-lg font-semibold text-gray-500">Total Spent</h3>
-            <p className="text-2xl font-bold">${stats.totalSpent.toFixed(2)}</p>
+            <p className="text-2xl font-bold">₹{stats.totalSpent.toFixed(2)}</p>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ const ExpenseSummary = ({ expenses }) => {
           <CalendarIcon className="w-12 h-12 text-green-500" />
           <div className="ml-4">
             <h3 className="text-lg font-semibold text-gray-500">Today's Expenses</h3>
-            <p className="text-2xl font-bold">${stats.todaySpent.toFixed(2)}</p>
+            <p className="text-2xl font-bold">₹{stats.todaySpent.toFixed(2)}</p>
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ const ExpenseSummary = ({ expenses }) => {
           <div className="ml-4">
             <h3 className="text-lg font-semibold text-gray-500">Highest Category</h3>
             <p className="text-2xl font-bold capitalize">{stats.highestCategory.name}</p>
-            <p className="text-sm text-gray-500">${stats.highestCategory.amount.toFixed(2)}</p>
+            <p className="text-sm text-gray-500">₹{stats.highestCategory.amount.toFixed(2)}</p>
           </div>
         </div>
       </div>
@@ -66,7 +66,7 @@ const ExpenseSummary = ({ expenses }) => {
           <ArrowTrendingDownIcon className="w-12 h-12 text-purple-500" />
           <div className="ml-4">
             <h3 className="text-lg font-semibold text-gray-500">Average Per Day</h3>
-            <p className="text-2xl font-bold">${stats.averagePerDay.toFixed(2)}</p>
+            <p className="text-2xl font-bold">₹{stats.averagePerDay.toFixed(2)}</p>
           </div>
         </div>
       </div>

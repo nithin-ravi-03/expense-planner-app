@@ -79,13 +79,14 @@ const ExpenseAnalytics = ({ expenses }) => {
                 cx="50%"
                 cy="50%"
                 outerRadius={100}
-                label={({name, value}) => `${name}: $${value.toFixed(2)}`}
+                label={({name, value}) => `${name}: ₹${value.toFixed(2)}`}
+
               >
                 {categoryData.map((entry, index) => (
                   <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+              <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
               <Legend />
             </PieChart>
           </ResponsiveContainer>
@@ -100,7 +101,7 @@ const ExpenseAnalytics = ({ expenses }) => {
             <LineChart data={dailySpending}>
               <XAxis dataKey="date" />
               <YAxis />
-              <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+              <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
               <Legend />
               <Line 
                 type="monotone" 
@@ -121,7 +122,7 @@ const ExpenseAnalytics = ({ expenses }) => {
             <BarChart data={monthlyData}>
               <XAxis dataKey="month" />
               <YAxis />
-              <Tooltip formatter={(value) => `$${value.toFixed(2)}`} />
+              <Tooltip formatter={(value) => `₹${value.toFixed(2)}`} />
               <Legend />
               <Bar dataKey="amount" fill="#8884d8" name="Monthly Total" />
             </BarChart>
