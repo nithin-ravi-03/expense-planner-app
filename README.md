@@ -24,16 +24,18 @@ A smart and user-friendly **Budget & Savings Tracker** that helps users **track 
 - **Icons:** Heroicons
 - **Storage:** Local Storage (for user data persistence)
 
-## 🚀 Live Demo
+## 🚀 Live Demo  
 
-[Click here to try the app!]([link-to-your-demo](https://expense-planner-app.vercel.app/))
+[Click here to try the app!](https://expense-planner-app.vercel.app/)  
 
-## 📸 Screenshots
+## 📸 Screenshots  
 
-![App UI Preview](![image](https://github.com/user-attachments/assets/7cbf2304-761b-401b-97d5-6bc80c9e59f8)
-)
-![Budget Management](![image](https://github.com/user-attachments/assets/b9b97df0-b652-47e3-92b2-a1db30babb4e)
-)
+### App UI Preview  
+![App UI Preview](https://github.com/user-attachments/assets/7cbf2304-761b-401b-97d5-6bc80c9e59f8)  
+
+### Budget Management  
+![Budget Management](https://github.com/user-attachments/assets/b9b97df0-b652-47e3-92b2-a1db30babb4e)  
+
 
 
 
