@@ -80,7 +80,7 @@ const BudgetManager = ({ expenses }) => {
                   )}
                 </div>
                 <div className="text-sm">
-                  ${spent.toFixed(2)} / ${budget.toFixed(2)}
+                    ₹{spent.toFixed(2)} / ₹{budget.toFixed(2)}
                 </div>
               </div>
               <div className="relative pt-1">

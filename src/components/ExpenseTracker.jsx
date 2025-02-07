@@ -160,7 +160,7 @@ const ExpenseTracker = () => {
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-2xl font-bold">Expense List</h2>
           <div className="text-lg font-semibold">
-            Total: ${totalExpenses.toFixed(2)}
+            Total: ₹{totalExpenses.toFixed(2)}
           </div>
         </div>
         
@@ -177,7 +177,7 @@ const ExpenseTracker = () => {
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <span className="font-semibold">${expense.amount.toFixed(2)}</span>
+                <span className="font-semibold">₹{expense.amount.toFixed(2)}</span>
                 <button
                   onClick={() => deleteExpense(expense.id)}
                   className="text-red-500 hover:text-red-700"
